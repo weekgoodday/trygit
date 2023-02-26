@@ -1,0 +1,11 @@
+models/__pycache__
+datasets/__pycache__
+checkpoints/
+data/
+wandb/
+models/*
+__pycache__/
+*.ipynb
+*.pt
+datasets/*
+outputs/*
