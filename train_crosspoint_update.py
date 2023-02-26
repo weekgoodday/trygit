@@ -117,7 +117,7 @@ def train(args, io):
     lr_scheduler = torch.optim.lr_scheduler.CosineAnnealingLR(opt, T_max=args.epochs, eta_min=0, last_epoch=-1)
     criterion = NTXentLoss(temperature=0.1).to(device)
     # xlin: finish setting optim
-    lam=5.0
+    lam=1.0
     warmup = 0 #After trial, we don't need warmup part.
     best_acc = 0
     for epoch in range(args.start_epoch, args.epochs):
